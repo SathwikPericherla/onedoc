@@ -11,7 +11,7 @@ const ONEDOC_API_KEY = "1648376c-c809-4381-975d-91b4d517aac3"; // replace with y
   const onedoc = new Onedoc(ONEDOC_API_KEY);
 
   let doc = {
-    html: await compile(<PDFTemplate name="Bruce Wayne" />),
+    html: await compile(<PDFTemplate name="Sathwik Pericherla" />),
     title: "Hello",
     test: true, // if true, produce a PDF in test mode with a Onedoc's watermark
     save: true, // if true, host the document and provide a download link in the console and your Onedoc's dashboard
