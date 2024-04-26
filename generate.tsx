@@ -5,7 +5,7 @@ import { readFileSync, writeFileSync } from "fs";
 import { compile } from "@onedoc/react-print";
 import { join } from "path";
 
-const ONEDOC_API_KEY = "1648376c-c809-4381-975d-91b4d517aac3"; // replace with your api key
+const ONEDOC_API_KEY = "393d95e7-32d8-4d6c-bd45-7ff6cff049f5"; // Replace this with your actual API key
 
 (async () => {
   const onedoc = new Onedoc(ONEDOC_API_KEY);
@@ -13,9 +13,9 @@ const ONEDOC_API_KEY = "1648376c-c809-4381-975d-91b4d517aac3"; // replace with y
   let doc = {
     html: await compile(<PDFTemplate name="Sathwik Pericherla" />),
     title: "Hello",
-    test: true, // if true, produce a PDF in test mode with a Onedoc's watermark
-    save: true, // if true, host the document and provide a download link in the console and your Onedoc's dashboard
-    expiresIn: 30, // the number of day you want to host your document
+    test: true, // Set to true to produce a PDF in test mode with Onedoc's watermark
+    save: true, // Set to true to host the document and provide a download link in the console and your Onedoc's dashboard
+    expiresIn: 30, // Number of days to host your document
     assets: [
       {
         path: "./stylesheet.css",
